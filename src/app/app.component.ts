@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  //template: '<hero-form></hero-form><multiselect-form></multiselect-form><accordion></accordion>'
+  template: '<search-user></search-user>'
 })
-export class AppComponent {
-  title = 'app works!';
-}
+export class AppComponent { }

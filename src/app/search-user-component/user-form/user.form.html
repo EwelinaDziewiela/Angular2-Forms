@@ -1,0 +1,10 @@
+<div class="form_group form-container">
+  <form (ngSubmit)="updateUser()" #searchUserForm="ngForm">
+    <div class="input-container col-xs-6">
+      <input name="searched" [ngModel]="searched" (ngModelChange)="updateUser($event)" class="form-control search-input" type="search"/>
+    </div>
+    <div class="btn-wrapper">
+      <button class="btn" type="submit">Search</button>
+    </div>
+  </form>
+</div>

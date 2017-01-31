@@ -1,0 +1,4 @@
+<div *ngFor="let element of accordionData">
+<p class="title" (click)="element.toggleContent()">{{element.title}}</p>
+<p class="description" *ngIf="element.isVisible">{{element.description}}</p>
+</div>

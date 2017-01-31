@@ -1,0 +1,25 @@
+<div class="form_wrapper">
+  <div class="form-window_container">
+    <select multiple [(ngModel)]="selected" name="selected">
+      <option *ngFor="let option of selectOption">{{option.label}}</option>
+    </select>
+  </div>
+  <div class="buttons_wrapper">
+    <div class="btn_container">
+      <span class="btn" (click)="onMove()"> > </span>
+    </div>
+    <div class="btn_container">
+      <span class="btn" (click)="onRemove()"> < </span>
+    </div>
+
+  </div>
+
+  <div class="form-window_container">
+    <select multiple [(ngModel)]="target" name="target">
+      <option *ngFor="let option of targetOption">{{option.label}}</option>
+
+    </select>
+  </div>
+
+</div>
+<p>{{selected}}</p>
